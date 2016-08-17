@@ -34,7 +34,7 @@ for i in range(n):
 
 
 for i in range(n):
-    rain_name = rain_name_list[rain_index[i]]
+    rain_name = 'RainStreak/' + rain_name_list[rain_index[i]]
     gt_name = file_list[i]
     img = Image.open(rain_name, 'r')
     gt = Image.open(os.path.join(gt_name), 'r')

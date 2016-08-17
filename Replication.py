@@ -8,7 +8,7 @@ rain_list = ['001_R.png', '002_R.png', '003_R.png', '004_R.png', '005_R.png', '0
 
 
 for r in rain_list:
-    rain = Image.open(r, 'r')
+    rain = Image.open('RainStreak/' + r, 'r')
     rain_data = np.array(rain)
     rain_dup_data = np.tile(rain_data, 3)
     rain_duplicated = Image.fromarray(rain_dup_data)
