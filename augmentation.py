@@ -8,7 +8,7 @@ from PIL import Image
 from PIL import ImageChops
 
 
-class AugmentClass:
+class AugmentClass(object):
     """
     Formula: I = B + SR
     """
@@ -38,6 +38,26 @@ class AugmentClass:
         self.i_dir = '../../../../../media/liruoteng/ELLA/DataSet/frames_cleanpass'
         self.s_dir = '../../../../../media/liruoteng/ELLA/DataSet/frames_cleanpass'
         self.r_dir = '../../../../../media/liruoteng/ELLA/DataSet/frames_cleanpass'
+        self.i_suffix = '_rain'
+        self.s_suffix = '_s'
+        self.r_suffix = '_r'
+        self.rain_name_list = [os.path.join(self.rain_texture_dir, f) for f in os.listdir(self.rain_texture_dir)]
+        # self.rain_name_list = ['001_R_3.png', '002_R_3.png', '003_R_3.png', '004_R_3.png', '005_R_3.png',
+        # '006_R_3.png', '007_R_3.png', '008_R_3.png', '009_R_3.png', '010_R_3.png', '011_R_3.png', '012_R_3.png']
+        self.image_height = 540
+        self.image_width = 960
+        for root, dirs, files in os.walk(self.image_dir):
+            for filename in files:
+                self.image_list.append(os.path.join(root, filename))
+        self.image_list.sort()
+        self.generate_augmentation_list()
+
+    def setup_drive_finalpass(self):
+        self.rain_texture_dir = 'RainStreak'
+        self.image_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
+        self.i_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
+        self.s_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
+        self.r_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
         self.i_suffix = '_rain'
         self.s_suffix = '_s'
         self.r_suffix = '_r'
@@ -95,7 +115,7 @@ class AugmentClass:
             bg_data = np.array(bg_image)
             rain_s_value = (rain_data - 128)
             rain_r_value = ((rain_data - 128) == 0)
-            image_i_data = bg_data.astype(np.uint16) + rain_s_value.astype(np.uint16)
+            image_i_data = bg_data.astype(np.uint16)[:,:, 0:3] + rain_s_value.astype(np.uint16)
             output_i = Image.fromarray(np.clip(image_i_data, 0, 255).astype(np.uint8))
             output_s = Image.fromarray(rain_s_value.astype(np.uint8))
             output_r = Image.fromarray(rain_r_value.astype(np.uint8))
@@ -113,7 +133,7 @@ class AugmentClass:
             output_s.save(image_s_name)
             if i % 100 == 0:
                 print "Processed", i
-            if i == n:
+            if i == n-1:
                 print "In Total ", i, " images have been processed"
 
     def augment_rain(self, i, rain_image):
