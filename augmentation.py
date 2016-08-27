@@ -6,6 +6,7 @@ import os
 import numpy as np
 from PIL import Image
 from PIL import ImageChops
+from scipy.ndimage import filters
 
 
 class AugmentClass(object):
@@ -33,7 +34,7 @@ class AugmentClass(object):
         self.rain_texture_dir = ''
 
     def setup_drive_dataset(self):
-        self.rain_texture_dir = 'RainStreak'
+        self.rain_texture_dir = 'RainStreak/wide'
         self.image_dir = '../../../../../media/liruoteng/ELLA/DataSet/frames_cleanpass'
         self.i_dir = '../../../../../media/liruoteng/ELLA/DataSet/frames_cleanpass'
         self.s_dir = '../../../../../media/liruoteng/ELLA/DataSet/frames_cleanpass'
@@ -53,7 +54,7 @@ class AugmentClass(object):
         self.generate_augmentation_list()
 
     def setup_drive_finalpass(self):
-        self.rain_texture_dir = 'RainStreak'
+        self.rain_texture_dir = 'RainStreak/wide'
         self.image_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
         self.i_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
         self.s_dir = '../../../../../media/liruoteng/File/Drive/frames_finalpass'
@@ -66,6 +67,24 @@ class AugmentClass(object):
         # '006_R_3.png', '007_R_3.png', '008_R_3.png', '009_R_3.png', '010_R_3.png', '011_R_3.png', '012_R_3.png']
         self.image_height = 540
         self.image_width = 960
+        for root, dirs, files in os.walk(self.image_dir):
+            for filename in files:
+                self.image_list.append(os.path.join(root, filename))
+        self.image_list.sort()
+        self.generate_augmentation_list()
+
+    def setup_middlebury(self):
+        self.rain_texture_dir = 'RainStreak/norm'
+        self.image_dir = 'other-data'
+        self.i_dir = 'other-data'
+        self.s_dir = 'other-data'
+        self.r_dir = 'other-data'
+        self.i_suffix= '_rain'
+        self.s_suffix = '_s'
+        self.r_suffix = '_r'
+        self.rain_name_list = [os.path.join(self.rain_texture_dir, f) for f in os.listdir(self.rain_texture_dir)]
+        self.image_height = 480
+        self.image_width = 640
         for root, dirs, files in os.walk(self.image_dir):
             for filename in files:
                 self.image_list.append(os.path.join(root, filename))
@@ -108,49 +127,88 @@ class AugmentClass(object):
             bg_image = Image.open(bg_image_name, 'r')
 
             # augment rain texture image
-            rain_rgb = self.augment_rain(i, rain_image)
+            rain_rgb = self.augment_rain(i, rain_image, bg_image)
 
             # convert final rain image object and back ground image object to array
             rain_data = np.array(rain_rgb)
             bg_data = np.array(bg_image)
-            rain_s_value = (rain_data - 128)
-            rain_r_value = ((rain_data - 128) == 0)
-            image_i_data = bg_data.astype(np.uint16)[:,:, 0:3] + rain_s_value.astype(np.uint16)
-            output_i = Image.fromarray(np.clip(image_i_data, 0, 255).astype(np.uint8))
-            output_s = Image.fromarray(rain_s_value.astype(np.uint8))
-            output_r = Image.fromarray(rain_r_value.astype(np.uint8))
+            # Rain image with Gaussian Blur
+            rain_data_blur_1 = np.array(filters.gaussian_filter(rain_data, 0.5))
+            rain_data_blur_2 = np.array(filters.gaussian_filter(rain_data, 1))
+            rain_data_blur_3 = np.array(filters.gaussian_filter(rain_data, 2))
+            rain_data_blur_4 = np.array(filters.gaussian_filter(rain_data, 4))
 
-            # file path manipulation
-            bg_image_basename = os.path.basename(bg_image_name)
-            bg_image_dirname = os.path.dirname(bg_image_name)
-            bg_image_filename = bg_image_basename[:bg_image_basename.find('.')]
-            image_i_name = os.path.join(bg_image_dirname, bg_image_filename + self.i_suffix + '.png')
-            image_s_name = os.path.join(bg_image_dirname, bg_image_filename + self.s_suffix + '.png')
-            image_r_name = os.path.join(bg_image_dirname, bg_image_filename + self.r_suffix + '.png')
-            # save output files
-            output_i.save(image_i_name)
-            output_r.save(image_r_name)
-            output_s.save(image_s_name)
+            # rain intensity map S
+            rain_s_value = (rain_data - 128)
+            rain_blur1_s_value = (rain_data_blur_1 - 128)
+            rain_blur2_s_value = (rain_data_blur_2 - 128)
+            rain_blur3_s_value = (rain_data_blur_3 - 128)
+            rain_blur4_s_value = (rain_data_blur_4 - 128)
+
+            # rain mask map R
+            rain_r_value = ((rain_data - 128) == 0)
+            rain_blur1_r_value = ((rain_data_blur_1 - 128) == 0)
+            rain_blur2_r_value = ((rain_data_blur_2 - 128) == 0)
+            rain_blur3_r_value = ((rain_data_blur_3 - 128) == 0)
+            rain_blur4_r_value = ((rain_data_blur_4 - 128) == 0)
+
+            # Apply rain data on the background
+            image_input_data = np.clip(bg_data.astype(np.uint16)[:, :, 0:3] + rain_s_value.astype(np.uint16), 0, 255).astype(np.uint8)
+            image_blur1_input_data = np.clip(bg_data.astype(np.uint16)[:, :, 0:3] + rain_blur1_s_value.astype(np.uint16), 0,255).astype(np.uint8)
+            image_blur2_input_data = np.clip(bg_data.astype(np.uint16)[:, :, 0:3] + rain_blur2_s_value.astype(np.uint16), 0, 255).astype(np.uint8)
+            image_blur3_input_data = np.clip(bg_data.astype(np.uint16)[:, :, 0:3] + rain_blur3_s_value.astype(np.uint16), 0, 255).astype(np.uint8)
+            image_blur4_input_data = np.clip(bg_data.astype(np.uint16)[:, :, 0:3] + rain_blur4_s_value.astype(np.uint16), 0, 255).astype(np.uint8)
+
+            # generate output files
+            self.write_image(bg_image_name, image_input_data, self.i_suffix)
+            self.write_image(bg_image_name, image_blur1_input_data, self.i_suffix + '_0.5')
+            self.write_image(bg_image_name, image_blur2_input_data, self.i_suffix + '_1.0')
+            self.write_image(bg_image_name, image_blur3_input_data, self.i_suffix + '_2.0')
+            self.write_image(bg_image_name, image_blur4_input_data, self.i_suffix + '_4.0')
+            self.write_image(bg_image_name, rain_s_value.astype(np.uint8), self.s_suffix)
+            self.write_image(bg_image_name, rain_blur1_s_value.astype(np.uint8), self.s_suffix + '_0.5')
+            self.write_image(bg_image_name, rain_blur2_s_value.astype(np.uint8), self.s_suffix + '_1.0')
+            self.write_image(bg_image_name, rain_blur3_s_value.astype(np.uint8), self.s_suffix + '_2.0')
+            self.write_image(bg_image_name, rain_blur4_s_value.astype(np.uint8), self.s_suffix + '_4.0')
+            self.write_image(bg_image_name, rain_r_value.astype(np.uint8), self.r_suffix)
+            self.write_image(bg_image_name, rain_blur1_r_value.astype(np.uint8), self.r_suffix + '_0.5')
+            self.write_image(bg_image_name, rain_blur2_r_value.astype(np.uint8), self.r_suffix + '_1.0')
+            self.write_image(bg_image_name, rain_blur3_r_value.astype(np.uint8), self.r_suffix + '_2.0')
+            self.write_image(bg_image_name, rain_blur4_r_value.astype(np.uint8), self.r_suffix + '_4.0')
+
             if i % 100 == 0:
                 print "Processed", i
             if i == n-1:
                 print "In Total ", i, " images have been processed"
 
-    def augment_rain(self, i, rain_image):
+    @staticmethod
+    def write_image(image_name, image_data, suffix):
+        # file path manipulation
+        image_basename = os.path.basename(image_name)
+        image_dirname = os.path.dirname(image_name)
+        image_filename = image_basename[:image_basename.find('.')]
+        image_out_name = os.path.join(image_dirname, image_filename + suffix + '.png')
+        # save output files
+        output = Image.fromarray(image_data)
+        output.save(image_out_name)
+        return
+
+    def augment_rain(self, i, rain_image, bg_image):
         # Manipulate on rain image for augmentation
+        (width, height) = bg_image.size
         img_offset = ImageChops.offset(rain_image, self.offset_range[i], 0)
         img_resize = img_offset.resize((self.width_range[i], self.height_range[i]), resample=Image.BILINEAR)
         (rain_image_width, rain_image_height) = img_resize.size
-        left = rain_image_width / 2 - self.image_width / 2
-        if self.image_width % 2 == 1:
-            right = rain_image_width / 2 + self.image_width / 2 + 1
+        left = rain_image_width / 2 - width / 2
+        if width % 2 == 1:
+            right = rain_image_width / 2 + width / 2 + 1
         else:
-            right = rain_image_width / 2 + self.image_width / 2
-        top = rain_image_height / 2 - self.image_height / 2
-        if self.image_height % 2 == 1:
-            bottom = rain_image_height / 2 + self.image_height / 2 + 1
+            right = rain_image_width / 2 + width / 2
+        top = rain_image_height / 2 - height / 2
+        if height % 2 == 1:
+            bottom = rain_image_height / 2 + height / 2 + 1
         else:
-            bottom = rain_image_height / 2 + self.image_height / 2
+            bottom = rain_image_height / 2 + height / 2
         img_rotate = img_resize.rotate(self.angle_range[i], expand=0)
         img_final = img_rotate.crop((left, top, right, bottom))
         rain_rgb = img_final.convert('RGB')
