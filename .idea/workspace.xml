@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08921642-cd23-47cf-8d72-a9fe8a0a224c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Canon1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Canon11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Canon2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Canon22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Canon3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Canon4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Sony1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Sony2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Sony3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Sony4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Sony5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/Sony6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame19.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Dimetrodon/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Dimetrodon/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Dimetrodon/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Dimetrodon/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Grove2/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Grove2/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Grove2/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Grove2/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Grove3/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Grove3/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Grove3/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Grove3/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Hydrangea/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Hydrangea/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Hydrangea/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Hydrangea/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/RubberWhale/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/RubberWhale/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/RubberWhale/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Urban2/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Urban2/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Urban2/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Urban2/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Urban3/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Urban3/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Urban3/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Urban3/frame11_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Venus/frame10_rain.png" afterPath="$PROJECT_DIR$/other-data/Venus/frame10_rain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other-data/Venus/frame11_rain.png" afterPath="$PROJECT_DIR$/other-data/Venus/frame11_rain.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Replication.py" afterPath="$PROJECT_DIR$/replication.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/augmentation.py" afterPath="$PROJECT_DIR$/augmentation.py" />
     </list>
@@ -60,42 +24,77 @@
     <favorites_list name="Augment" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="augmentation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/augmentation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-836">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding>
-                <element signature="e#53#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Replication.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Replication.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#37#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="augmentation.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/augmentation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1882">
+                  <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#53#62#0" expanded="true" />
+                    <element signature="e#268#872#0" expanded="false" />
+                    <element signature="e#917#2010#0" expanded="false" />
+                    <element signature="e#2057#3365#0" expanded="false" />
+                    <element signature="e#3407#4299#0" expanded="false" />
+                    <element signature="e#4350#5142#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/run.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="replication.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/replication.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#37#58#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="augmentation.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/augmentation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="384">
+                  <caret line="204" column="36" selection-start-line="204" selection-start-column="24" selection-end-line="204" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#53#62#0" expanded="true" />
+                    <element signature="e#268#872#0" expanded="false" />
+                    <element signature="e#917#2010#0" expanded="false" />
+                    <element signature="e#2057#3365#0" expanded="false" />
+                    <element signature="e#3407#4299#0" expanded="false" />
+                    <element signature="e#4350#5142#0" expanded="false" />
+                    <element signature="e#5178#9439#0" expanded="false" />
+                    <element signature="e#11568#12058#0" expanded="false" />
+                    <element signature="e#12132#12732#0" expanded="false" />
+                    <element signature="e#12811#13214#0" expanded="false" />
+                    <element signature="e#13295#13703#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,9 +119,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1971" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1869" />
-    <option name="height" value="1176" />
+    <option name="height" value="1204" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -149,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -169,8 +170,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +188,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Augment" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Replication.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replication.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -392,26 +391,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1971" y="24" width="1869" height="1176" extended-state="6" />
-    <editor active="false" />
+    <frame x="1971" y="-4" width="1869" height="1204" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19555797" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12784399" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32037038" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -438,11 +437,67 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -458,11 +513,29 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -478,11 +551,81 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/replication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -499,11 +642,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -520,11 +673,21 @@
           <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -541,11 +704,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -561,11 +734,21 @@
           <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -582,11 +765,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
@@ -607,9 +800,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_flownet.py" />
     <entry file="file://$PROJECT_DIR$/test_flownet.py" />
-    <entry file="file://$PROJECT_DIR$/Replication.py">
+    <entry file="file://$PROJECT_DIR$/RainStreak/001_R_3.png" />
+    <entry file="file://$PROJECT_DIR$/RainStreak/001_R.png" />
+    <entry file="file://$PROJECT_DIR$/replication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="306">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#37#58#0" expanded="true" />
@@ -617,12 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RainStreak/001_R_3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RainStreak/001_R.png" />
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -633,10 +822,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/augmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="384">
+          <caret line="204" column="36" selection-start-line="204" selection-start-column="24" selection-end-line="204" selection-end-column="36" />
           <folding>
             <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#268#872#0" expanded="false" />
+            <element signature="e#917#2010#0" expanded="false" />
+            <element signature="e#2057#3365#0" expanded="false" />
+            <element signature="e#3407#4299#0" expanded="false" />
+            <element signature="e#4350#5142#0" expanded="false" />
+            <element signature="e#5178#9439#0" expanded="false" />
+            <element signature="e#11568#12058#0" expanded="false" />
+            <element signature="e#12132#12732#0" expanded="false" />
+            <element signature="e#12811#13214#0" expanded="false" />
+            <element signature="e#13295#13703#0" expanded="false" />
           </folding>
         </state>
       </provider>
